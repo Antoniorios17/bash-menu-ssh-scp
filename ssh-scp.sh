@@ -10,7 +10,10 @@ read input
 
 # Function to execute the ssh option
 function ssh-assist {
-        echo Hello I\'m the ssh function 
+    echo "Please enter the Public Ip address"
+    read ipaddress
+    echo Hello I\'m the ssh function
+
         
 }
 # Function to execute scp option
