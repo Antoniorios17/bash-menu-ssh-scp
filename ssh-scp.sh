@@ -9,7 +9,7 @@ echo "2 - Send/retrieve file using scp"
 read input
 
 case $input in
-    1) echo ""
+    1) echo "test";;
 
-
+esac
 # provide the options of the program
