@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #variables
-ssh_key = ~/awskey.pem
+ssh_key=/home/antonio/awskey.pem
 
 #welcome statement
 printf "*** Welcome to the ssh-scp assistant ***\n\n"
@@ -18,10 +18,10 @@ function ssh-assist {
     read ipaddress
     echo "Please enter the username:"
     read username
-    echo "$ipaddress $username"
-    
-
-    
+    local remote_host="$username@$ipaddress"
+    echo "Connecting to $remote_host"
+    sleep 1
+    ssh -i $ssh_key $remote_host
         
 }
 # Function to execute scp option
