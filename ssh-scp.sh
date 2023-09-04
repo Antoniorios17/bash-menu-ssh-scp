@@ -1,19 +1,27 @@
 #!/bin/bash
 
+#variables
+ssh_key = ~/awskey.pem
+
 #welcome statement
 printf "*** Welcome to the ssh-scp assistant ***\n\n"
 printf "Select an option to continue\n\n"
 echo "1 - Connect to a computer using ssh"
 echo "2 - Send/retrieve file using scp"
 
+
 read input
 
 # Function to execute the ssh option
 function ssh-assist {
-    echo "Please enter the Public Ip address"
+    echo "Please enter the Public IP address:"
     read ipaddress
-    echo Hello I\'m the ssh function
+    echo "Please enter the username:"
+    read username
+    echo "$ipaddress $username"
+    
 
+    
         
 }
 # Function to execute scp option
