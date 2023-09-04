@@ -8,8 +8,22 @@ echo "2 - Send/retrieve file using scp"
 
 read input
 
-case $input in
-    1) echo "test";;
+# Function to execute the ssh option
+function ssh-assist {
+        echo Hello I\'m the ssh function 
+        
+}
+# Function to execute scp option
 
+function scp-assit {
+    echo Hello I\'m the scp function
+}
+
+
+case $input in
+    1) ssh-assist;;
+    2) scp-assist;;
+    *) echo "Not a valid answer";;
 esac
 # provide the options of the program
+
