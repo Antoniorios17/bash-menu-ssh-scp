@@ -18,7 +18,7 @@ function ip-username {
     read ipaddress
     echo "Please enter the username:"
     read username
-    declare -g $remote_host="$username@$ipaddress"
+    remote_host="$username@$ipaddress"
 }
 
 
@@ -28,7 +28,7 @@ function ssh-assist {
     echo "Welcome to the ssh assistant"
     ip-username
     echo "Connecting to $remote_host"
-    sleep 1
+    sleep 2
     ssh -i $ssh_key $remote_host
         
 }
