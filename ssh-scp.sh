@@ -14,6 +14,7 @@ read input
 
 # Function to execute the ssh option
 function ssh-assist {
+    echo "Welcome to the ssh assistant"
     echo "Please enter the Public IP address:"
     read ipaddress
     echo "Please enter the username:"
@@ -26,15 +27,16 @@ function ssh-assist {
 }
 # Function to execute scp option
 
-function scp-assit {
+function scp-assist {
     echo Hello I\'m the scp function
 }
 
 
+# provide the options of the program
 case $input in
     1) ssh-assist;;
     2) scp-assist;;
     *) echo "Not a valid answer";;
 esac
-# provide the options of the program
+
 
