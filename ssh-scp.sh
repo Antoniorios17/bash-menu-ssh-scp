@@ -3,15 +3,6 @@
 #absolute path to the keypair
 ssh_key=/home/antonio/awskey.pem
 
-#welcome statement
-printf "*** Welcome to the ssh-scp assistant ***\n\n"
-printf "Select an option to continue:\n\n"
-echo "1. Connect to a computer using ssh"
-echo "2. Send/retrieve file using scp"
-
-
-read input
-
 # ip address- username
 function ip-username {
     echo "Please enter the Public IP address:"
@@ -20,7 +11,6 @@ function ip-username {
     read username
     remote_host="$username@$ipaddress"
 }
-
 
 
 # Function to execute the ssh option
@@ -39,6 +29,12 @@ function scp-assist {
     ssh-assist
 }
 
+#welcome statement
+printf "*** Welcome to the ssh-scp assistant ***\n\n"
+printf "Select an option to continue:\n\n"
+echo "1. Connect to a computer using ssh"
+echo "2. Send/retrieve file using scp"
+read input
 
 # provide the options of the program
 case $input in
