@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 #absolute path to the keypair
 ssh_key=/home/antonio/awskey.pem
 
@@ -33,16 +34,12 @@ function scp-local-to-remote {
     echo "Local to remote"
     scp-source-dest
     scp -i $ssh_key $source $username@$ipaddress:$destination
-
-
 }
 
 function scp-remote-to-local {
     echo "Remote to local"
     scp-source-dest
     scp -i $ssh_key $username@$ipaddress:$source $destination
-
-
 }
 # Function to execute scp option
 
@@ -62,13 +59,7 @@ function scp-assist {
     else
         echo "Invalid option"
     fi
-    exit 0
-
-
-
-
-
-    
+    exit 0 
 
 }
 
