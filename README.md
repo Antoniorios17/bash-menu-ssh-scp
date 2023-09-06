@@ -61,5 +61,3 @@ To use the script, follow these steps:
 ## Conclusion
 
 This Bash script provides a convenient and interactive way to connect to remote computers using SSH and transfer files using SCP. It streamlines these common tasks into a user-friendly menu-driven interface, making it easier to manage remote connections and file transfers.
-
-Feel free to customize the script or expand its functionality according to your specific needs.
