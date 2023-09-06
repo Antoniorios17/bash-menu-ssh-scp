@@ -22,11 +22,22 @@ function ssh-assist {
     ssh -i $ssh_key $remote_host
         
 }
+
+function scp-source-dest {
+    echo "Please enter the source file location: "
+    read source
+    echo "Please enter the destination file location:"
+    read destination
+}
+
 # Function to execute scp option
 
 function scp-assist {
-    echo Hello I\'m the scp function
-    ssh-assist
+    echo "Welcome to the scp assistant"
+    ip-username
+    
+    
+
 }
 
 #welcome statement
