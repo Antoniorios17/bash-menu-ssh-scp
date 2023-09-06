@@ -12,7 +12,6 @@ function ip-username {
     remote_host="$username@$ipaddress"
 }
 
-
 # Function to execute the ssh option
 function ssh-assist {
     echo "Welcome to the ssh assistant"
@@ -31,11 +30,11 @@ function scp-source-dest {
 }
 
 function scp-local-to-remote {
-    echo "local-to-remote"
+    echo "Local to remote"
 }
 
 function scp-remote-to-local {
-    echo "remote-to-local"
+    echo "Remote to local"
 }
 # Function to execute scp option
 
@@ -46,13 +45,11 @@ function scp-assist {
     echo "1. Local  --> Remote"
     echo "2. Remote --> Local"
     read scpselection
-    if [[$scpselection = 1]];
+    if [[ $scpselection = 1 ]];
     then
-        echo "option 1"
         scp-local-to-remote
-    elif [[$scpselection = 2]];
+    elif [[ $scpselection = 2 ]];
     then
-        echo "option2"
         scp-remote-to-local
     else
         echo "Invalid option"
