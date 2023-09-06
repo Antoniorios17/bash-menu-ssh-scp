@@ -1,5 +1,12 @@
 #!/bin/bash
 
+######################################################################################
+#
+# Script Name   	: 	ssh-scp.sh
+# Description   	:	Use ssh or scp to connect and send or retrieve files
+# Author		    :  	Antonio Rios
+#
+######################################################################################
 
 #absolute path to the keypair
 ssh_key=/home/antonio/awskey.pem
