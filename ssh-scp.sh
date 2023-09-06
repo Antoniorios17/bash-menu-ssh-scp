@@ -30,12 +30,39 @@ function scp-source-dest {
     read destination
 }
 
+function scp-local-to-remote {
+    echo "local-to-remote"
+}
+
+function scp-remote-to-local {
+    echo "remote-to-local"
+}
 # Function to execute scp option
 
 function scp-assist {
     echo "Welcome to the scp assistant"
     ip-username
-    
+    echo "Please select an option"
+    echo "1. Local  --> Remote"
+    echo "2. Remote --> Local"
+    read scpselection
+    if [[$scpselection = 1]];
+    then
+        echo "option 1"
+        scp-local-to-remote
+    elif [[$scpselection = 2]];
+    then
+        echo "option2"
+        scp-remote-to-local
+    else
+        echo "Invalid option"
+    fi
+    exit 0
+
+
+
+
+
     
 
 }
