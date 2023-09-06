@@ -54,7 +54,7 @@ To use the script, follow these steps:
 
 ## Important Notes
 
-- Make sure you have the correct SSH key file (`awskey.pem`) in the specified path.
+- Make sure you have the correct SSH key file in the specified path.
 
 - Ensure you have the necessary permissions to access the remote host via SSH and perform SCP file transfers.
 
