@@ -31,10 +31,18 @@ function scp-source-dest {
 
 function scp-local-to-remote {
     echo "Local to remote"
+    scp-source-dest
+    scp -i $ssh_key $source $username@$ipaddress:$destination
+
+
 }
 
 function scp-remote-to-local {
     echo "Remote to local"
+    scp-source-dest
+    scp -i $ssh_key $username@$ipaddress:$source $destination
+
+
 }
 # Function to execute scp option
 
